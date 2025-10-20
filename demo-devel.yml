@@ -1,0 +1,28 @@
+compatible: sdk
+
+product_info:
+  name: 'App SDK Demo Bundle (development firmware)'
+  code: 'EM400' # This is used for the default hostname
+
+  manufacturer: 'TQ-Systems GmbH'
+  manufacturer_url: 'https://www.tq-group.com/'
+
+defaults:
+  cache: true
+
+apps:
+  access-token:
+    version: '1.4.7'
+
+  devel:
+    arch: 'all'
+    version: '1.4.3'
+
+  json:
+    version: '2.8.1'
+
+  smart-meter:
+    version: '2.9.0'
+
+  upnp:
+    version: '2.1.1'

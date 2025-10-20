@@ -1,0 +1,16 @@
+---
+include:
+- project: tq-em/public/build/toolchain
+  file: ci/bundles.yml
+  ref: main
+
+Build Demo Bundle (aarch64):
+  extends: .build-aarch64-bundle
+  variables:
+    TQEM_MACHINE: em-aarch64
+
+Gitleaks:
+  extends: .gitleaks
+
+Deploy:
+  extends: .simple-deploy
