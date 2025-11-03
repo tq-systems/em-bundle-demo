@@ -18,6 +18,10 @@ apps:
     arch: 'all'
     version: '1.4.3'
 
+  go-demo:
+    version: 'latest'
+    url: file://${TQEM_BASE_DEPLOY_PATH}/snapshots/apps/go-demo/main/{app}_{version}_{arch}.empkg
+
   json:
     version: '2.8.1'
 
