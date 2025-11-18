@@ -12,17 +12,21 @@ defaults:
 
 apps:
   access-token:
-    version: '1.4.7'
+    version: '2.0.2'
 
   devel:
     arch: 'all'
-    version: '1.4.3'
+    version: '1.4.4'
+
+  go-demo:
+    version: 'latest'
+    url: file://${TQEM_BASE_DEPLOY_PATH}/snapshots/apps/go-demo/main/{app}_{version}_{arch}.empkg
 
   json:
-    version: '2.8.1'
+    version: '3.0.1'
 
   smart-meter:
-    version: '2.9.0'
+    version: '3.0.2'
 
   upnp:
     version: '2.1.1'

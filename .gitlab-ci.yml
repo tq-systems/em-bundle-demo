@@ -19,5 +19,5 @@ Build Demo Bundle (aarch64):
 Gitleaks:
   extends: .gitleaks
 
-Deploy:
-  extends: .simple-deploy
+Deploy Snapshot:
+  extends: .deploy-snapshot
