@@ -22,6 +22,11 @@ apps:
     version: 'latest'
     url: file://${TQEM_BASE_DEPLOY_PATH}/snapshots/apps/go-demo/main/{app}_{version}_{arch}.empkg
 
+  open-ui-container:
+    arch: 'all'
+    version: 'latest'
+    url: file://${TQEM_BASE_DEPLOY_PATH}/snapshots/apps/open-ui-container/main/{app}_{version}_{arch}.empkg
+
   json:
     version: '3.0.1'
 
