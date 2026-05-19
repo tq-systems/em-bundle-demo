@@ -22,6 +22,9 @@ apps:
     version: 'latest'
     url: file://${TQEM_BASE_DEPLOY_PATH}/snapshots/apps/go-demo/main/{app}_{version}_{arch}.empkg
 
+  # ui-container is replaced with its open source variant open-ui-container
+  ui-container: null
+
   open-ui-container:
     arch: 'all'
     version: 'latest'
