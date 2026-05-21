@@ -11,6 +11,7 @@ defaults:
   cache: true
 
 apps:
+  # Apps from the TQ-Systems package server
   access-token:
     version: '2.0.2'
 
@@ -18,20 +19,26 @@ apps:
     arch: 'all'
     version: '1.4.4'
 
-  go-demo:
-    version: 'latest'
-    url: file://${TQEM_BASE_DEPLOY_PATH}/snapshots/apps/go-demo/main/{app}_{version}_{arch}.empkg
-
-  open-ui-container:
-    arch: 'all'
-    version: 'latest'
-    url: file://${TQEM_BASE_DEPLOY_PATH}/snapshots/apps/open-ui-container/main/{app}_{version}_{arch}.empkg
-
   json:
     version: '3.0.1'
 
   smart-meter:
     version: '3.0.2'
 
+  # ui-container is replaced with its locally built open source variant (see below)
+  ui-container: null
+
   upnp:
     version: '2.1.1'
+
+  # Locally built apps
+  go-demo:
+    version: 'latest'
+    branch: 'main'
+    url: file://${TQEM_BASE_DEPLOY_PATH}/snapshots/apps/{app}/{branch}/{app}_{version}_{arch}.empkg
+
+  open-ui-container:
+    arch: 'all'
+    version: 'latest'
+    branch: 'main'
+    url: file://${TQEM_BASE_DEPLOY_PATH}/snapshots/apps/{app}/{branch}/{app}_{version}_{arch}.empkg
