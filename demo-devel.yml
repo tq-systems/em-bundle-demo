@@ -33,12 +33,10 @@ apps:
 
   # Locally built apps
   go-demo:
-    version: 'latest'
-    branch: 'main'
-    url: file://${TQEM_BASE_DEPLOY_PATH}/snapshots/apps/{app}/{branch}/{app}_{version}_{arch}.empkg
+    version: '1.0.2'
+    url: file://${TQEM_BASE_DEPLOY_PATH}/snapshots/apps/{app}/v{version}/{app}_{version}_{arch}.empkg
 
   open-ui-container:
     arch: 'all'
-    version: 'latest'
-    branch: 'main'
-    url: file://${TQEM_BASE_DEPLOY_PATH}/snapshots/apps/{app}/{branch}/{app}_{version}_{arch}.empkg
+    version: '1.0.3'
+    url: file://${TQEM_BASE_DEPLOY_PATH}/snapshots/apps/{app}/v{version}/{app}_{version}_{arch}.empkg
