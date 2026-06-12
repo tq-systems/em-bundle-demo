@@ -15,6 +15,8 @@ include:
 
 Build Demo Bundle (aarch64):
   extends: .build-aarch64-bundle
+  before_script:
+    - make prepare
   variables:
     TQEM_MACHINE: em-aarch64
 
